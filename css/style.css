@@ -1,0 +1,88 @@
+.container {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 400px;
+   height: 400px;
+   background: rgb(45, 45, 45);
+}
+
+#trigger {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 150px;
+   height: 150px;
+   background: rgb(235, 235, 235);
+   border-radius: 50%;
+   border: none;
+   cursor: pointer;
+   z-index: 10;
+   /* transition: all, .35s; */
+}
+
+/* Bear Styles */
+#bear {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 350px;
+   height: 350px;
+   visibility: hidden;
+   /* border: 1px solid red; */
+}
+
+#eyes1 circle, #eyes2 circle{
+   fill: rgb(45, 45, 45);
+}
+
+#mouth {
+   fill: rgb(45, 45, 45);
+   /* border: 1px solid red; */
+   height: 58px; 
+   width: 68px;
+}
+
+#ears1 {
+   position: absolute;
+   left: 50%;
+   width: 350px;
+   height: 95px;
+   /* border: 1px solid red; */
+}
+
+#clip1 {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   left: 50%;
+   top: 50%;
+   height: 120px;
+   overflow: hidden;
+}
+
+#inner-face1 {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 200px;
+   height: 182px;
+   visibility: hidden;
+}
+
+#outer-face1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 350px;
+   height: 350px;
+}
+
+#pattern1 {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 320px;
+   height: 320px;
+   /* visibility: hidden; */
+}
