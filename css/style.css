@@ -6,7 +6,7 @@
    height: 400px;
    background: rgb(45, 45, 45);
 }
-
+/* 
 #trigger {
    position: absolute;
    top: 50%;
@@ -18,22 +18,24 @@
    border: none;
    cursor: pointer;
    z-index: 10;
-   /* transition: all, .35s; */
-}
+} */
 
 /* Bear Styles */
-#bear {
+#eyes {
    position: absolute;
    left: 50%;
    top: 50%;
-   width: 350px;
-   height: 350px;
+   width: 340px;
+   height: 340px;
    visibility: hidden;
-   /* border: 1px solid red; */
 }
 
 #eyes1 circle, #eyes2 circle{
    fill: rgb(45, 45, 45);
+}
+
+#eyes1 {
+   border: 1px solid red;
 }
 
 #mouth {
@@ -66,8 +68,11 @@
    left: 50%;
    top: 50%;
    width: 200px;
-   height: 182px;
-   visibility: hidden;
+   height: 220px;
+   cursor: pointer;
+   z-index: 10;
+   /* border: 1px solid red; */
+   /* visibility: hidden; */
 }
 
 #outer-face1 {
@@ -78,6 +83,15 @@
    height: 350px;
 }
 
+#inner-face-morph {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 200px;
+   height: 200px;
+   visibility: hidden;
+}
+
 #pattern1 {
    position: absolute;
    top: 50%;
@@ -86,3 +100,5 @@
    height: 320px;
    /* visibility: hidden; */
 }
+
+
