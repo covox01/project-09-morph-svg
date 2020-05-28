@@ -62,8 +62,8 @@ function animateBear(){
       .fromTo("#ears1", .5, { opacity: 0, scale: .8, y: 40, width: 300 }, { opacity: 1, scale: 1, width: 350, y: 30, ease: Back.easeInOut.config(3)}, "sync2")
       .to("#eyes1", .4, { y: -5, ease: Power2.easeInOut }, "sync2")
       .to("#mouth1", .4, { y: -15, ease: Power2.easeInOut }, "sync2")
-      .to("#eyes1", .5, {y: 0, ease: Back.easeOut.config(4)}, "sync3-=.1")
-      .to("#mouth1", .5, { y: 0, ease: Back.easeOut.config(4) }, "sync3-=.1")
+      .to("#eyes1", .5, {y: 0, ease: Back.easeOut.config(5)}, "sync3-=.1")
+      .to("#mouth1", .5, { y: 0, ease: Back.easeOut.config(5) }, "sync3-=.1")
       // .to("#ears1", .2, {y:40, yoyo: true, repeat: 1, ease: Back.easeInOut}, "-=.2")
    
    TweenMax.to("#pattern1", 3, {rotation: 180, ease: Power3.easeInOut})
