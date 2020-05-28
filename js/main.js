@@ -10,7 +10,6 @@ function init(){
    TweenMax.set("#mouth1", {y: 100, opacity: 0})
    TweenMax.set("#outer-face1", {transformOrigin: "center center", opacity: 0})
    TweenMax.set("#pattern1", {transformOrigin: "center center", opacity: 0})
-   // animate()
    addEventListeners()
 }
 
@@ -61,15 +60,14 @@ function animateBear(){
       .fromTo("#outer-face1", .5, {opacity: 0, scale: .7}, {opacity: 1, scale: 1, ease: Back.easeInOut})
       .to("#pattern1", .5, {opacity: 1})
       .fromTo("#ears1", .5, { opacity: 0, scale: .8, y: 40, width: 300 }, { opacity: 1, scale: 1, width: 350, y: 30, ease: Back.easeInOut.config(3)}, "sync2")
-      .to("#eyes1", .4, { y: -5, ease: Back.easeInOut }, "sync2")
-      .to("#mouth1", .4, { y: -15, ease: Back.easeInOut }, "sync2")
-      .to("#eyes1", .5, {y: 0, ease: Back.easeInOut}, "sync3-=.1")
-      .to("#mouth1", .5, { y: 0, ease: Back.easeInOut }, "sync3-=.1")
+      .to("#eyes1", .4, { y: -5, ease: Power2.easeInOut }, "sync2")
+      .to("#mouth1", .4, { y: -15, ease: Power2.easeInOut }, "sync2")
+      .to("#eyes1", .5, {y: 0, ease: Back.easeOut.config(4)}, "sync3-=.1")
+      .to("#mouth1", .5, { y: 0, ease: Back.easeOut.config(4) }, "sync3-=.1")
       // .to("#ears1", .2, {y:40, yoyo: true, repeat: 1, ease: Back.easeInOut}, "-=.2")
    
    TweenMax.to("#pattern1", 3, {rotation: 180, ease: Power3.easeInOut})
 }
-
 
 
 init()
